@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #efefef;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    max-width: 650px;
+    margin: 10px;
+}
+
+#soundboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.soundboardNode {
+    background-color: white;
+    width: 30.3333333%;
+    margin: 10px 10px 0 0;
+    height: 125px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+@media only screen and (max-width: 500px) {
+    .soundboardNode {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .soundboardNode {
+        margin: 10px 0 0 0;
+        width: 100%;
+    }
+}
+
+.soundboardNode:hover {
+    color: white;
+    background-color: #555;
+}
+.soundboardNode:active {
+    background-color: #333;
+}
