@@ -18,6 +18,18 @@ footer {
     margin-bottom: 50px;
 }
 
+header {
+    margin-top: 20px;
+}
+header h1 {
+    display: inline;
+}
+img {
+    margin-right: 10px;
+    display: inline;
+    float: left;
+    width: 200px;
+}
 #soundboard {
     display: flex;
     flex-wrap: wrap;
