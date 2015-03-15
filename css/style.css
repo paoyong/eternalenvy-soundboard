@@ -5,13 +5,13 @@
 body {
     margin: 0;
     padding: 0;
-    background: #efefef;
+    background: #f0f0f0;
     font-family: 'Raleway', sans-serif;
 }
 
 .container {
-    max-width: 650px;
-    margin: 10px;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 #soundboard {
@@ -21,20 +21,33 @@ body {
 }
 .soundboardNode {
     background-color: white;
-    width: 30.3333333%;
+    width: 18%;
+    width: 200px;
     margin: 10px 10px 0 0;
-    height: 125px;
+    height: 175px;
     padding: 20px;
     cursor: pointer;
     text-align: center;
     -webkit-user-select: none; /* Chrome/Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+ */
+    -webkit-transition: background-color .1s ease-in-out;
+    -moz-transition: background-color .1s ease-in-out;
+    -o-transition: background-color .1s ease-in-out;
+    transition: background-color .1s ease-in-out;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1360px) {
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
     .soundboardNode {
-        width: 45%;
+        width: calc(50% - 10px);
+        margin: 5px;
     }
 }
 
