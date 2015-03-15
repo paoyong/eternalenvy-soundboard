@@ -5,7 +5,6 @@
 body {
     margin: 0;
     padding: 0;
-    background: #f0f0f0;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -14,13 +13,19 @@ body {
     margin: 0 auto;
 }
 
+footer {
+    margin-top: 125px;
+    margin-bottom: 50px;
+}
+
 #soundboard {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
+
 .soundboardNode {
-    background-color: white;
+    background-color: #eee;
     width: 18%;
     width: 200px;
     margin: 10px 10px 0 0;
