@@ -34,7 +34,7 @@ img {
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
-    flex-wrap: -webkit-wrap;
+    -webkit-flex-wrap: wrap;
     width: 100%;
 }
 
