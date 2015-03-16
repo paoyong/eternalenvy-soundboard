@@ -39,6 +39,7 @@ img {
 }
 
 .soundboardNode {
+    overflow: hidden;
     margin: 10px 10px 0 0;
     background-color: #EEF0F3;
     width: 18%;
