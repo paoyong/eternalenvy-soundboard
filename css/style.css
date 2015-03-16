@@ -57,6 +57,16 @@ img {
     transition: background-color .1s ease-in-out;
 }
 
+
+.soundboardNode:hover {
+    color: white;
+    background-color: #555;
+}
+
+.soundboardNode:active {
+    background-color: #333;
+}
+
 @media only screen and (max-width: 1360px) {
     .container {
         margin-left: 10px;
@@ -73,6 +83,17 @@ img {
         width: calc(50% - 10px);
         margin: 5px;
     }
+
+    .soundboardNode:active {
+        background-color: #EEF0F3;
+        color: inherit;
+    }
+
+    .soundboardNode:hover {
+        background-color: #EEF0F3;
+        color: inherit;
+    }
+
 }
 
 @media only screen and (max-width: 300px) {
@@ -80,12 +101,4 @@ img {
         margin: 10px 0 0 0;
         width: 100%;
     }
-}
-
-.soundboardNode:hover {
-    color: white;
-    background-color: #555;
-}
-.soundboardNode:active {
-    background-color: #333;
 }
