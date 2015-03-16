@@ -32,15 +32,16 @@ img {
 }
 #soundboard {
     display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
 .soundboardNode {
-    background-color: #eee;
+    margin: 10px 10px 0 0;
+    background-color: #EEF0F3;
     width: 18%;
     width: 200px;
-    margin: 10px 10px 0 0;
     height: 175px;
     padding: 20px;
     cursor: pointer;
