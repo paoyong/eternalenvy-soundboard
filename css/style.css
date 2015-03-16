@@ -22,7 +22,8 @@ header {
     margin-top: 20px;
 }
 header h1 {
-    display: inline;
+    display: inline-block;
+    margin: 0;
 }
 img {
     margin-right: 10px;
@@ -75,9 +76,19 @@ img {
 }
 
 @media only screen and (max-width: 460px) {
+    header{
+        margin-top: 0;
+    }
+    h1 {
+        padding: 5px;
+        padding-bottom: 10px;
+    }
     img {
         margin: 5px;
         width: calc(100% - 10px);
+    }
+    .container {
+        margin: 0;
     }
     .soundboardNode {
         width: calc(50% - 10px);
