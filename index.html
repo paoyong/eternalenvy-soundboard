@@ -16,6 +16,20 @@
     </div>
     <footer>
         Made by <a href="http://keithy.me">Keith Yong</a>. Github repo <a href="https://github.com/keithyong/eternalenvy-soundboard/tree/gh-pages">here.</a>
+        To add new sounds:
+
+        <ol type="1">
+            <li>Go to the <a href="https://github.com/keithyong/eternalenvy-soundboard">repo.</a></li>
+            <li>Fork</li>
+            <li>Add a new .mp3 sound to the <a href="https://github.com/keithyong/eternalenvy-soundboard/tree/master/sounds">sounds folder</a>. Lets say you added "team.mp3".</li>
+            <li>Add a new reference to that sound in the big sounds array in <a href="https://github.com/keithyong/eternalenvy-soundboard/blob/master/js/script.js">script.js</a>, like this
+                <p>
+                    <code>
+                        { says: 'Team? team?... team TEAM', id: 'team', url: soundFolder + 'team' + extension }
+                    </code>
+                </p></li>
+            <li>Commit and push, and do a pull request!</li>
+        </ol>
     </footer>
 </div>
 <script type="text/javascript" src="js/script.js"></script>
