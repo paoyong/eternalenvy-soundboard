@@ -252,6 +252,11 @@ var data = [
         id: 'farewell',
         url: soundFolder + 'farewell' + extension
     },
+    {
+        says: 'Furion can you tp top?',
+        id: 'furiontptop',
+        url: soundFolder + 'furiontptop' + extension
+    },
 ];
 
 function play(id) {
