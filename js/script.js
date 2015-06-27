@@ -252,6 +252,21 @@ var data = [
         id: 'farewell',
         url: soundFolder + 'farewell' + extension
     },
+    {
+        says: 'Furion can you tp top?',
+        id: 'furiontptop',
+        url: soundFolder + 'furiontptop' + extension
+    },
+    {
+        says: 'ahdessa cheese dessa cheese dessa cheese! sdaegisncheese aegis and cheese! we do nawhv room, we do naw hav room!',
+        id: 'aegisnoroom',
+        url: soundFolder + 'aegisnoroom' + extension
+    },
+    {
+        says: 'your stick your stick your stick! Drop your stick! DROP YOUR STICK!',
+        id: 'dropyourstick',
+        url: soundFolder + 'dropyourstick' + extension
+    },
 ];
 
 function play(id) {
