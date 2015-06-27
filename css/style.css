@@ -5,7 +5,6 @@
 body {
     margin: 0;
     padding: 0;
-    background: #f0f0f0;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -14,16 +13,38 @@ body {
     margin: 0 auto;
 }
 
+footer {
+    margin-top: 125px;
+    margin-bottom: 50px;
+}
+
+header {
+    margin-top: 20px;
+}
+header h1 {
+    display: inline-block;
+    margin: 0;
+}
+img {
+    margin-right: 10px;
+    display: inline;
+    float: left;
+    width: 200px;
+}
 #soundboard {
     display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     width: 100%;
 }
+
 .soundboardNode {
-    background-color: white;
+    overflow: hidden;
+    margin: 10px 10px 0 0;
+    background-color: #EEF0F3;
     width: 18%;
     width: 200px;
-    margin: 10px 10px 0 0;
     height: 175px;
     padding: 20px;
     cursor: pointer;
@@ -37,6 +58,16 @@ body {
     transition: background-color .1s ease-in-out;
 }
 
+
+.soundboardNode:hover {
+    color: white;
+    background-color: #555;
+}
+
+.soundboardNode:active {
+    background-color: #333;
+}
+
 @media only screen and (max-width: 1360px) {
     .container {
         margin-left: 10px;
@@ -45,10 +76,35 @@ body {
 }
 
 @media only screen and (max-width: 460px) {
+    header{
+        margin-top: 0;
+    }
+    h1 {
+        padding: 5px;
+        padding-bottom: 10px;
+    }
+    img {
+        margin: 5px;
+        width: calc(100% - 10px);
+    }
+    .container {
+        margin: 0;
+    }
     .soundboardNode {
         width: calc(50% - 10px);
         margin: 5px;
     }
+
+    .soundboardNode:active {
+        background-color: #EEF0F3;
+        color: inherit;
+    }
+
+    .soundboardNode:hover {
+        background-color: #EEF0F3;
+        color: inherit;
+    }
+
 }
 
 @media only screen and (max-width: 300px) {
@@ -56,12 +112,4 @@ body {
         margin: 10px 0 0 0;
         width: 100%;
     }
-}
-
-.soundboardNode:hover {
-    color: white;
-    background-color: #555;
-}
-.soundboardNode:active {
-    background-color: #333;
 }
