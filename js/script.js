@@ -262,6 +262,11 @@ var data = [
         id: 'aegisnoroom',
         url: soundFolder + 'aegisnoroom' + extension
     },
+    {
+        says: 'your stick your stick your stick! Drop your stick! DROP YOUR STICK!',
+        id: 'dropyourstick',
+        url: soundFolder + 'dropyourstick' + extension
+    },
 ];
 
 function play(id) {
