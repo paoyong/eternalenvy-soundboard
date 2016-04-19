@@ -13,6 +13,11 @@ var data = [
         url: soundFolder + 'no3' + extension
     },
     {
+        says: 'game is so shit', 
+        id: 'gamesoshit',
+        url: soundFolder + 'gamesoshit' + extension
+    },
+    {
         says: 'No. no... no.', 
         id: 'no2',
         url: soundFolder + 'no2' + extension
