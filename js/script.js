@@ -272,6 +272,16 @@ var data = [
         id: 'dropyourstick',
         url: soundFolder + 'dropyourstick' + extension
     },
+    {
+        says: 'gebak gebak GEBAK GEBAK GEBAK',
+        id: 'Gebak',
+        url: soundFolder + 'Gebak' + extension
+    },
+    {
+        says: 'everyone gebak EVERYONE GEBAK as much as you can',
+        id: 'Every1 kebab',
+        url: soundFolder + 'Every1 kebab' + extension
+    },
 ];
 
 function play(id) {
