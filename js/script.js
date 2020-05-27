@@ -300,11 +300,11 @@ function appendSoundboardToHTML() {
     for (var i = 0; i < data.length; i++) { 
         curr = data[i];
         var audioElemId = 'audio-' + curr.id;
-        soundboardNode = '<div class=soundboardNode id=' + curr.id + ' onclick=play(\'' + audioElemId + '\')>';
+        soundboardNode = '<div class=soundboardNode id=' + curr.id + ' onclick="play(\'' + audioElemId + '\')">';
         soundboardNode += curr.says;
 
         // Make audio HTML element and append it to current soundboard node
-        audioNode = '<audio id=' + audioElemId + '><source src=' + curr.url + '></audio>';
+        audioNode = '<audio id=' + audioElemId + '><source src="' + curr.url + '"></audio>';
         soundboardNode += audioNode;
         soundboardNode += '</div>';
         soundboardInnerHTML += soundboardNode;
