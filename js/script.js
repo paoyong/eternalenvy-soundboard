@@ -118,7 +118,7 @@ var data = [
         url: soundFolder + 'rprprp' + extension
     },
     {
-        says: 'HOOO where o-ones fucking off lodota', 
+        says: 'HOOO everyone is fucking awful at dota', 
         id: 'hoo',
         url: soundFolder + 'hoo' + extension
     },
